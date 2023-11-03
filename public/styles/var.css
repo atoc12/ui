@@ -1,0 +1,30 @@
+:root[data-theme = "dark"] {
+    --font-color-primary:white;
+    --font-color-secondary:rgb(223, 215, 215);
+    --color-primary:#303030;
+    --color-secondary:#242527;
+    --color-other:#2A3441;
+    --modal-background:#1F2937;
+}
+:root[data-theme = "dark-blue"] {
+    --font-color-primary:white;
+    --font-color-secondary:rgb(223, 215, 215);
+    --color-primary:linear-gradient(245deg, rgba(0,0,0,1) -31%, rgba(41,13,45,1) 38%, rgba(0,0,0,1) 13%, rgba(2,7,48,1) 85%, rgba(2,7,48,1) 100%, rgba(0,0,0,1) 100%);
+    /* --color-primary: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(41, 13, 45, 1), rgba(0, 0, 0, 1), rgba(2, 7, 48, 1), rgba(2, 7, 48, 1), rgba(0, 0, 0, 1)); */
+
+    --color-secondary:#192231;
+    --color-other:#2A3441;
+    --modal-background:#1F2937;
+}
+:root[data-theme = "light"] {
+    --font-color-primary:black;
+    --font-color-secondary:rgb(48, 48, 48);
+    /* --color-primary:#E3E9F7; */
+    --color-primary:linear-gradient(209deg, #E3E9F7 10%, rgb(184, 97, 235) 26%,#E3E9F7 73%);
+    --color-secondary:#FFFFFF;
+    --color-other:rgb(255, 255, 255);
+    --modal-background:#ffff;
+}
+:root{
+    --border-color-primary:rgba(128, 128, 128, 0.534);
+}

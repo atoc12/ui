@@ -1,0 +1,189 @@
+@media screen and (max-width:660px) {
+    aside{
+        position: relative;
+        width: 100%;
+        height: min-content;
+    }
+    .nav-parent{
+        position: relative;
+        width: 100%;
+        transition: background 200ms linear;
+        flex-direction: row;
+    }
+    .nav-parent>*{
+        flex: 1;
+    }
+    .nav-bottom-options{
+        display: none;
+    }
+    .nav-button{
+        display:none;
+    }
+    .nav-user-description{
+        display: none;
+    }
+    .nav-responsive-hidden{
+        display: none !important;
+    }
+    .nav-mid-options ul{
+        flex-flow: row nowrap;
+    }
+    .nav-mid-options ul>li>a{
+        justify-content: center;
+    }
+    .nav-tooltip{
+        display: none;
+    }
+}
+@media screen and (min-width:661px) {
+    nav[data-nav = "close"]{
+        min-width: 0px;
+        /* width: 65px; */
+        /* max-width: 70px; */
+    }
+    nav[data-nav = "close"] .nav-close-block{
+        display: none;
+    }
+    nav[data-nav = "open"]{
+        width: 300px;
+        /* min-width: 200px; */
+    }
+    aside{
+        padding: 0.5em;
+    }
+    .nav-parent{
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 80px;
+        flex-direction: column;
+        gap: 1em;
+        padding: 1em;
+        transition: width 200ms linear,background 200ms linear;
+    }
+    .nav-button{
+        display: flex;
+    }
+    .nav-mid-options{
+        border-top: 1px solid var(--border-color-primary);
+        border-bottom: 1px solid var(--border-color-primary);
+        padding: .5em 0em .5em 0em;
+    }
+    .nav-mid-options ul{
+        flex-flow: column nowrap;
+    }
+    .nav-li-option-hidden{
+        display: none;
+    }
+    .nav-li-option:hover{
+        border-radius: 0.5em;
+    }
+}
+
+.nav-parent{
+    z-index: 999;
+    background-color: var(--color-secondary);
+    box-shadow: 0px 0px 10px -5px #242527;
+    height: 100%;
+    border-radius: 0 5px 5px 0px;
+    color: var(--font-color-primary);
+    display: flex;
+    animation: op 500ms linear;
+}
+.nav-top-options{
+    display: flex;
+    border-radius: 5px;
+    gap: 1rem;
+}
+.nav-icon-user{
+    border-radius: 5px;
+    background-color: rgb(195, 130, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 1.6rem;
+    --icon-user-size:3rem;
+    width: var(--icon-user-size);
+    height: var(--icon-user-size);
+    max-width: var(--icon-user-size);
+    max-height: var(--icon-user-size);
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    
+}
+.nav-button{
+    position: absolute;
+    top: 10px;
+    right: -1.05rem;
+    border: none;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+    background-color: rgb(132, 0, 255);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.nav-mid-options{
+    flex: 1;
+}
+.nav-mid-options ul{
+    display: flex;
+    list-style: none;
+    gap: 1em;
+}
+.nav-li-option{
+    width: 100%;
+    transition: all 200ms linear;
+}
+.nav-li-option:hover{
+    background-color: #685CFE;
+}
+.nav-li-option:hover>a , .nav-li-option:hover>button{
+    color: #ffffff;
+}
+.nav-li-option> a , .nav-li-option> button{
+    width: 100%;
+    transition: all 200ms linear;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    color: var(--font-color-secondary);
+    gap: 1.5em;
+    align-items: center;
+    overflow: hidden;
+}
+.nav-li-option> a>*,.nav-li-option>button{
+    flex: 1;
+}
+.nav-li-option> a>span:first-child,.nav-li-option>button>span:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 3rem;
+    padding: 0.5em;
+}
+.nav-li-option> a>span>svg,.nav-li-option> button>span>svg{
+    font-size: 2rem;
+    transition: none;
+}
+.nav-user-description{
+    min-width: 100px;
+    max-width: 100px;
+    overflow: hidden;
+    animation: op 500ms linear;
+}
+.nav-tooltip{
+    animation: op 500ms linear;
+}
+.nav-bottom-options>ul{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+}
+.nav-bottom-options ul{
+    list-style: none;
+}

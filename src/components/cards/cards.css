@@ -1,0 +1,77 @@
+.card{
+    position: relative;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 300px;
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.336);
+    border-radius: 1em;
+    display: flex;
+    flex-flow: column;
+    gap: 0.5em;
+    padding: 1em;
+    overflow: hidden;
+}
+.card-bg-blur{
+    background-color: rgba(37, 35, 35, 0.199);
+    backdrop-filter: blur(10px);
+}
+.card-text-container{
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    gap: .2em;
+}
+.card-tittle{
+    font-size: 1.5rem;
+    color: var(--font-color-primary);
+}
+.card-options-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+    gap: .5em;
+}
+.card-subtittle{
+    font-size: .8rem;
+    font-weight: 100;
+    color: var(--font-color-secondary);
+}
+.card img{
+    width: 100%;
+    height: 100%;
+}
+.card .card-img{
+    object-fit: contain;
+}
+
+/* skeleton */
+
+.card-skeleton .card-img-container>span{
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+.card-skeleton .card-tittle{
+    display: block;
+    height: .8rem;
+    width: 150px;
+}
+.card-skeleton .card-tittle{
+    display: block;
+    height: .8rem;
+    width: 150px;
+    border-radius: 1em;
+}
+.card-skeleton .card-subtittle{
+    display: block;
+    height: .4rem;
+    width: 50px;
+    border-radius: 1em;
+}
+.card-skeleton .card-description{
+    display: block;
+    height: 0.9em;
+    width: 100%;
+    border-radius: .5em;
+}
